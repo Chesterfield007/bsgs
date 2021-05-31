@@ -24,7 +24,7 @@ if len(sys.argv) > 3 or len(sys.argv) < 3:
 
 
 if platform.system().lower().startswith('win'):
-    mylib = ctypes.CDLL('bloom.dll')
+    mylib = ctypes.CDLL('./bloom.dll')
     
 elif platform.system().lower().startswith('lin'):
     mylib = ctypes.CDLL('./bloom.so')
